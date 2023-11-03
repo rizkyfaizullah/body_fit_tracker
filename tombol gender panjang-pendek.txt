@@ -1,0 +1,62 @@
+Pendek
+Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          gender = "Laki-laki";
+                        });
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.blue, // Warna latar belakang biru untuk "Laki-laki"
+                      ),
+                      child: Text("Laki-laki"),
+                    ),
+                    SizedBox(width: 10),
+                    ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          gender = "Perempuan";
+                        });
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.pink, // Warna latar belakang pink untuk "Perempuan"
+                      ),
+                      child: Text("Perempuan"),
+                    ),
+                  ],
+                ),
+
+Panjang
+Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            gender = "Laki-laki";
+                          });
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.blue, // Warna latar belakang biru untuk "Laki-laki"
+                        ),
+                        child: Text("Laki-laki"),
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            gender = "Perempuan";
+                          });
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.pink, // Warna latar belakang pink untuk "Perempuan"
+                        ),
+                        child: Text("Perempuan"),
+                      ),
+                    ),
+                  ],
+                ),
